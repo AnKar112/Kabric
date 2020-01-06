@@ -1,0 +1,1663 @@
+/*---BASE---*/
+@import url(tippy.js/themes/light-border.css);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+/* ol, ul {
+	list-style: none;
+} */
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html, body {
+  height: 100%;
+  min-height: 100%;
+  overflow-x: hidden; }
+
+body {
+  font-family: sans-serif;
+  line-height: 1; }
+
+img {
+  max-width: 100%; }
+
+body {
+  font-family: 'Open Sans', sans-serif; }
+
+/*---LAYOUTS---*/
+.wrapper {
+  padding: 0 25px;
+  width: calc(100% - 100px);
+  max-width: 1440px;
+  margin: 0 auto; }
+  @media (max-width: 550px) {
+    .wrapper {
+      width: calc(100% - 50px); } }
+
+/*---HEADER---*/
+.header {
+  background: linear-gradient(to right, #f1fafc, #24b9ca);
+  margin-bottom: 45px; }
+  @media (max-width: 1400px) {
+    .header {
+      margin-bottom: 15px; } }
+
+.up-header {
+  display: flex;
+  align-items: center;
+  padding: 30px 0px 20px 0px; }
+  @media (max-width: 550px) {
+    .up-header {
+      padding: 20px 0px 20px 0px; } }
+  @media (max-width: 550px) {
+    .up-header {
+      flex-direction: column; } }
+  @media (max-width: 800px) {
+    .up-header .logo-link {
+      width: 65%; } }
+  @media (max-width: 740px) {
+    .up-header .logo-link {
+      width: 58%; } }
+  @media (max-width: 550px) {
+    .up-header .logo-link {
+      display: flex;
+      justify-content: center;
+      width: 90%; } }
+  .up-header img {
+    width: 70%; }
+    @media (max-width: 1400px) {
+      .up-header img {
+        width: 30%; } }
+    @media (max-width: 550px) {
+      .up-header img {
+        width: 70%; } }
+
+.reg-buttons {
+  margin-left: auto; }
+  @media (max-width: 550px) {
+    .reg-buttons {
+      margin-left: 0;
+      display: flex;
+      flex-direction: column; } }
+
+.reg-buttons a {
+  font-size: 22px;
+  font-family: "Maven Pro";
+  color: white;
+  line-height: 1.636;
+  text-decoration: none; }
+  @media (max-width: 930px) {
+    .reg-buttons a {
+      font-size: 18px; } }
+  @media (max-width: 550px) {
+    .reg-buttons a {
+      text-align: center; } }
+
+.reg-buttons .register {
+  margin-left: 60px; }
+  @media (max-width: 930px) {
+    .reg-buttons .register {
+      margin-left: 20px; } }
+  @media (max-width: 550px) {
+    .reg-buttons .register {
+      margin-left: 0; } }
+
+.sub-header {
+  margin-bottom: 45px; }
+  @media (max-width: 1400px) {
+    .sub-header {
+      margin-bottom: 15px; } }
+
+.sub-header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 140px; }
+  @media (max-width: 1400px) {
+    .sub-header-content {
+      height: 50px; } }
+  @media (max-width: 700px) {
+    .sub-header-content {
+      flex-direction: column;
+      height: auto; } }
+
+.sub-header-content a {
+  font-size: 22px;
+  font-family: "Maven Pro";
+  font-weight: 700;
+  color: #231f20;
+  line-height: 1.636;
+  text-decoration: none; }
+  @media (max-width: 1400px) {
+    .sub-header-content a {
+      font-size: 18px; } }
+  @media (max-width: 700px) {
+    .sub-header-content a {
+      font-size: 30px;
+      margin-bottom: 10px; } }
+
+.sub-header-content .button {
+  height: 70px;
+  width: 270px;
+  background-color: #682792;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  font-family: "Maven Pro";
+  line-height: 1.636;
+  font-weight: 900;
+  color: white; }
+  @media (max-width: 1400px) {
+    .sub-header-content .button {
+      font-size: 18px;
+      height: 50px;
+      width: 220px; } }
+  @media (max-width: 1000px) {
+    .sub-header-content .button {
+      margin-right: 5%; } }
+  @media (max-width: 800px) {
+    .sub-header-content .button {
+      font-size: 22px;
+      height: 66px;
+      width: 240px; } }
+  @media (max-width: 700px) {
+    .sub-header-content .button {
+      height: 79px;
+      width: 294px;
+      font-size: 28px; } }
+
+/*---MODULES---*/
+.banner {
+  margin-bottom: 45px;
+  background: url(../img/banner.png) no-repeat right center;
+  background-color: #f4f4f4;
+  background-size: cover; }
+  @media (max-width: 1400px) {
+    .banner {
+      background-size: cover;
+      margin-bottom: 25px; } }
+  @media (max-width: 1200px) {
+    .banner {
+      background: url(../img/banner.png) no-repeat 60% center;
+      background-size: cover; } }
+  @media (max-width: 1200px) {
+    .banner {
+      background: url(../img/banner.png) no-repeat 30% center;
+      background-size: cover; } }
+  @media (max-width: 850px) {
+    .banner {
+      background: url(../img/banner.png) no-repeat 0% center;
+      background-size: cover; } }
+
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 0 0 0; }
+  @media (max-width: 700px) {
+    .banner-content {
+      align-items: center; } }
+  @media (max-width: 1400px) {
+    .banner-content {
+      padding: 20px 0 0 0; } }
+
+.banner-content .title {
+  font-size: 52px;
+  font-family: "Maven Pro";
+  font-weight: 700;
+  color: #440099;
+  line-height: 1;
+  padding: 0 0 30px 0; }
+  @media (max-width: 1400px) {
+    .banner-content .title {
+      font-size: 38px; } }
+  @media (max-width: 565px) {
+    .banner-content .title {
+      text-align: center; } }
+  @media (max-width: 550px) {
+    .banner-content .title {
+      font-size: 48px; } }
+  @media (max-width: 485px) {
+    .banner-content .title {
+      font-size: 40px;
+      padding: 0 0 15px 0; } }
+  @media (max-width: 485px) {
+    .banner-content .title {
+      font-size: 40px; } }
+  @media (max-width: 410px) {
+    .banner-content .title {
+      font-size: 34px; } }
+  @media (max-width: 355px) {
+    .banner-content .title {
+      font-size: 30px; } }
+
+.banner-content .text {
+  font-size: 24px;
+  font-family: "Maven Pro";
+  color: black;
+  line-height: 1.357;
+  padding: 0 0 30px 0; }
+  @media (max-width: 1400px) {
+    .banner-content .text {
+      font-size: 16px; } }
+  @media (max-width: 565px) {
+    .banner-content .text {
+      text-align: center; } }
+  @media (max-width: 460px) {
+    .banner-content .text {
+      font-size: 22px; } }
+  @media (max-width: 410px) {
+    .banner-content .text {
+      font-size: 16px; } }
+
+.how {
+  background: url(../img/how-background.png) no-repeat left center;
+  background-color: #f4f4f4;
+  margin-bottom: 55px;
+  background-size: cover; }
+  @media (max-width: 1400px) {
+    .how {
+      margin-bottom: 25px;
+      background-size: cover; } }
+  @media (max-width: 1200px) {
+    .how {
+      background: url(../img/how-background.png) no-repeat 30% center;
+      background-size: cover; } }
+  @media (max-width: 1000px) {
+    .how {
+      background: url(../img/how-background.png) no-repeat 50% center; } }
+  @media (max-width: 850px) {
+    .how {
+      background: url(../img/how-background.png) no-repeat 100% center; } }
+
+.how-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  margin-left: auto; }
+  @media (max-width: 1200px) {
+    .how-content {
+      width: 60%; } }
+  @media (max-width: 1000px) {
+    .how-content {
+      width: 70%; } }
+  @media (max-width: 850px) {
+    .how-content {
+      width: 90%; } }
+  @media (max-width: 700px) {
+    .how-content {
+      width: 100%; } }
+
+.how-content .title {
+  font-size: 52px;
+  font-family: "Maven Pro";
+  color: black;
+  font-weight: bold;
+  line-height: 1.167;
+  margin: 50px 0 50px 0; }
+  @media (max-width: 1400px) {
+    .how-content .title {
+      font-size: 38px;
+      margin: 25px 0 25px 0; } }
+  @media (max-width: 485px) {
+    .how-content .title {
+      font-size: 42px; } }
+  @media (max-width: 500px) {
+    .how-content .title {
+      margin: 15px 0 15px 0;
+      font-size: 30px; } }
+
+.how-content .text {
+  font-size: 24px;
+  font-family: "Maven Pro";
+  color: black;
+  line-height: 1.7;
+  padding-bottom: 65px; }
+  @media (max-width: 1400px) {
+    .how-content .text {
+      font-size: 16px;
+      padding-bottom: 5px; } }
+  @media (max-width: 500px) {
+    .how-content .text {
+      padding-bottom: 25px; } }
+  @media (max-width: 485px) {
+    .how-content .text {
+      font-size: 16px; } }
+
+.how-content .icons {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%; }
+  @media (max-width: 500px) {
+    .how-content .icons {
+      flex-wrap: wrap; } }
+
+.how-content p {
+  text-align: center; }
+
+.how-content .icons .icon {
+  margin-bottom: 45px; }
+  @media (max-width: 1400px) {
+    .how-content .icons .icon {
+      margin-bottom: 10px;
+      width: 60%;
+      height: 60%; } }
+  @media (max-width: 625px) {
+    .how-content .icons .icon {
+      margin-bottom: 0px; } }
+  @media (max-width: 500px) {
+    .how-content .icons .icon {
+      width: auto;
+      height: auto;
+      margin-bottom: 15px; } }
+
+.how-content .icons div {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  @media (max-width: 600px) {
+    .how-content .icons div {
+      width: 50%; } }
+  @media (max-width: 500px) {
+    .how-content .icons div {
+      width: 40%; } }
+
+@media (max-width: 500px) {
+  .how-content .icons .icon-3 {
+    width: 100%; } }
+
+.how-content .icons p {
+  font-size: 30px;
+  font-family: "Maven Pro";
+  color: black;
+  font-weight: 500;
+  line-height: 1.167; }
+  @media (max-width: 1400px) {
+    .how-content .icons p {
+      font-size: 26px;
+      margin-bottom: 40px; } }
+  @media (max-width: 625px) {
+    .how-content .icons p {
+      font-size: 20px;
+      text-align: center;
+      margin-bottom: 30px; } }
+
+@media (max-width: 500px) {
+  .last-icon {
+    margin-bottom: 15px !important; } }
+
+.price {
+  background: url(../img/price-background.png) no-repeat right center;
+  background-color: #f4f4f4;
+  margin-bottom: 55px; }
+  @media (max-width: 1200px) {
+    .price {
+      margin-bottom: 25px; } }
+  @media (max-width: 850px) {
+    .price {
+      background: url(../img/price-background.png) no-repeat 80% center; } }
+  @media (max-width: 480px) {
+    .price {
+      background: url(../img/price-background.png) no-repeat 60% center; } }
+
+.price-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 45px;
+  width: 1030px; }
+  @media (max-width: 1300px) {
+    .price-content {
+      padding-top: 25px; } }
+  @media (max-width: 1100px) {
+    .price-content {
+      width: auto; } }
+  @media (max-width: 500px) {
+    .price-content {
+      padding-top: 15px; } }
+
+.price-content .title {
+  font-size: 42px;
+  font-family: "Maven Pro";
+  color: black;
+  font-weight: bold;
+  line-height: 1.167;
+  margin-bottom: 55px; }
+  @media (max-width: 1400px) {
+    .price-content .title {
+      margin-bottom: 28px; } }
+  @media (max-width: 500px) {
+    .price-content .title {
+      margin-bottom: 15px;
+      font-size: 30px; } }
+
+.price-table {
+  display: flex;
+  text-align: center;
+  background-color: white;
+  margin-bottom: 45px; }
+
+.price-table p {
+  border-bottom: 1px solid #e3e3e3; }
+
+.price-right {
+  margin: 0px 35px 0px 27px; }
+  @media (max-width: 1400px) {
+    .price-right {
+      margin: 0px 30px 0px 20px; } }
+  @media (max-width: 450px) {
+    .price-right {
+      margin: 0px 15px 0px 10px; } }
+  @media (max-width: 360px) {
+    .price-right {
+      margin: 0px 15px 0px 5px; } }
+
+.price-left {
+  margin-left: 35px; }
+  @media (max-width: 1400px) {
+    .price-left {
+      margin-left: 30px; } }
+  @media (max-width: 450px) {
+    .price-left {
+      margin-left: 15px; } }
+
+.price-title {
+  font-size: 32px;
+  font-family: "Maven Pro";
+  color: black;
+  font-weight: bold;
+  line-height: 1.167;
+  padding: 37px 0 14px 0; }
+  @media (max-width: 1400px) {
+    .price-title {
+      padding: 30px 0 10px 0;
+      font-size: 28px; } }
+  @media (max-width: 750px) {
+    .price-title {
+      font-size: 24px; } }
+  @media (max-width: 450px) {
+    .price-title {
+      font-size: 20px; } }
+
+.price-cost {
+  font-size: 60px;
+  font-family: "Maven Pro";
+  color: black;
+  font-weight: bold;
+  line-height: 1.167;
+  padding: 37px 0 14px 0; }
+  @media (max-width: 1400px) {
+    .price-cost {
+      padding: 20px 0 10px 0;
+      font-size: 30px; } }
+  @media (max-width: 750px) {
+    .price-cost {
+      font-size: 40px; } }
+  @media (max-width: 450px) {
+    .price-cost {
+      font-size: 34px; } }
+  @media (max-width: 350px) {
+    .price-cost {
+      font-size: 30px; } }
+
+.price-position-enable {
+  font-size: 22px;
+  font-family: "Roboto";
+  color: black;
+  line-height: 1.415;
+  padding: 14px 0 14px 0; }
+  @media (max-width: 1400px) {
+    .price-position-enable {
+      font-size: 12px; } }
+  @media (max-width: 750px) {
+    .price-position-enable {
+      font-size: 12px; } }
+  @media (max-width: 500px) {
+    .price-position-enable {
+      font-size: 10px; } }
+
+.price-position-disable {
+  font-size: 22px;
+  font-family: "Roboto";
+  color: #b2b2b2;
+  line-height: 1.415;
+  padding: 14px 0 14px 0; }
+  @media (max-width: 1400px) {
+    .price-position-disable {
+      font-size: 12px; } }
+  @media (max-width: 750px) {
+    .price-position-disable {
+      font-size: 12px; } }
+  @media (max-width: 500px) {
+    .price-position-disable {
+      font-size: 10px; } }
+
+.faq-bg {
+  background: linear-gradient(to bottom, #f4f4f4 0%, #f4f4f4 85%, white 50%, white 100%); }
+
+.faq {
+  background: url(../img/faq-banner.png) no-repeat left center;
+  margin-bottom: 40px;
+  height: 1030px;
+  background-size: cover; }
+  @media (max-width: 1400px) {
+    .faq {
+      margin-bottom: 25px;
+      height: 730px; } }
+  @media (max-width: 500px) {
+    .faq {
+      height: 630px;
+      background-size: cover;
+      background: url(../img/faq-banner.png) no-repeat 8% center; } }
+  .faq .faq-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    margin-left: auto;
+    position: relative; }
+    @media (max-width: 1150px) {
+      .faq .faq-content {
+        width: 90%; } }
+    @media (max-width: 900px) {
+      .faq .faq-content {
+        width: 100%; } }
+    .faq .faq-content .title {
+      font-size: 42px;
+      font-family: "Maven Pro";
+      color: black;
+      font-weight: bold;
+      line-height: 1.167;
+      margin: 60px 0 60px 0; }
+      @media (max-width: 1400px) {
+        .faq .faq-content .title {
+          margin: 30px 0 30px 0;
+          font-size: 32px; } }
+      @media (max-width: 500px) {
+        .faq .faq-content .title {
+          font-size: 30px; } }
+    .faq .faq-content .faq-table {
+      margin-bottom: 55px;
+      position: absolute;
+      left: 0%;
+      top: 85%;
+      right: 5%;
+      z-index: 999; }
+      @media (max-width: 500px) {
+        .faq .faq-content .faq-table {
+          right: -10%; } }
+      @media (max-width: 460px) {
+        .faq .faq-content .faq-table {
+          left: -10%; } }
+      .faq .faq-content .faq-table .question {
+        background-color: white;
+        cursor: pointer;
+        padding: 0px 45px 0px 45px;
+        width: 100%;
+        text-align: left;
+        border: none;
+        outline: none;
+        transition: 0.4s;
+        line-height: 1.415; }
+        .faq .faq-content .faq-table .question .question-block {
+          display: flex;
+          justify-content: space-between;
+          align-content: center;
+          border-bottom: 1px solid #c6c6c6;
+          padding: 55px 0px 35px 0px; }
+          @media (max-width: 1400px) {
+            .faq .faq-content .faq-table .question .question-block {
+              padding: 35px 0px 25px 0px; } }
+          .faq .faq-content .faq-table .question .question-block p {
+            font-size: 22px;
+            font-family: "Roboto";
+            font-weight: 500;
+            color: black; }
+            @media (max-width: 1400px) {
+              .faq .faq-content .faq-table .question .question-block p {
+                font-size: 18px; } }
+            @media (max-width: 570px) {
+              .faq .faq-content .faq-table .question .question-block p {
+                font-size: 16px; } }
+            @media (max-width: 500px) {
+              .faq .faq-content .faq-table .question .question-block p {
+                font-size: 12px; } }
+          .faq .faq-content .faq-table .question .question-block img {
+            align-self: center;
+            transition: all 0.3s ease; }
+          .faq .faq-content .faq-table .question .question-block .active {
+            transform: scaleY(-1); }
+      .faq .faq-content .faq-table .answer {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        padding: 0 45px;
+        background-color: white; }
+        .faq .faq-content .faq-table .answer p {
+          padding: 45px 0 54px 0;
+          font-size: 22px;
+          font-family: "Roboto";
+          color: black;
+          line-height: 1.415;
+          border-bottom: 0px solid #c6c6c6; }
+          @media (max-width: 1400px) {
+            .faq .faq-content .faq-table .answer p {
+              padding: 25px 0 35px 0;
+              font-size: 18px; } }
+          @media (max-width: 570px) {
+            .faq .faq-content .faq-table .answer p {
+              font-size: 16px; } }
+          @media (max-width: 570px) {
+            .faq .faq-content .faq-table .answer p {
+              font-size: 12px; } }
+        .faq .faq-content .faq-table .answer .active p {
+          border-bottom: 1px solid #c6c6c6; }
+
+.plan {
+  background: url(../img/plan-background.png) no-repeat left center;
+  background-color: #f4f4f4;
+  margin-bottom: 68px;
+  background-size: cover; }
+  @media (max-width: 1350px) {
+    .plan {
+      background-size: cover;
+      background: url(../img/plan-background.png) no-repeat 60% center; } }
+  @media (max-width: 1200px) {
+    .plan {
+      margin-bottom: 25px;
+      background: url(../img/plan-background.png) no-repeat 80% center; } }
+  @media (max-width: 900px) {
+    .plan {
+      background: url(../img/plan-background.png) no-repeat 100% center; } }
+
+.plan-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  margin-left: auto; }
+  @media (max-width: 1350px) {
+    .plan-content {
+      width: 70%; } }
+  @media (max-width: 1100px) {
+    .plan-content {
+      width: 80%; } }
+  @media (max-width: 900px) {
+    .plan-content {
+      width: 100%; } }
+  .plan-content .title {
+    padding: 50px 0 90px 0;
+    font-size: 42px;
+    font-family: "Maven Pro";
+    color: black;
+    font-weight: bold;
+    line-height: 1.167; }
+    @media (max-width: 1400px) {
+      .plan-content .title {
+        font-size: 32px;
+        padding: 30px 0 60px 0; } }
+    @media (max-width: 1000px) {
+      .plan-content .title {
+        padding: 30px 0 40px 0; } }
+    @media (max-width: 850px) {
+      .plan-content .title {
+        font-size: 36px; } }
+    @media (max-width: 900px) {
+      .plan-content .title {
+        width: 100%;
+        text-align: center; } }
+    @media (max-width: 500px) {
+      .plan-content .title {
+        font-size: 30px; } }
+  .plan-content .buttons {
+    display: flex; }
+    @media (max-width: 750px) {
+      .plan-content .buttons {
+        flex-direction: column; } }
+    .plan-content .buttons .button-block-left {
+      margin-right: 70px;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      @media (max-width: 750px) {
+        .plan-content .buttons .button-block-left {
+          margin-right: 0; } }
+      .plan-content .buttons .button-block-left .button {
+        background-color: #682792;
+        border-radius: 15px;
+        height: 110px;
+        width: 350px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none; }
+        @media (max-width: 1400px) {
+          .plan-content .buttons .button-block-left .button {
+            width: 240px;
+            height: 60px; } }
+        @media (max-width: 850px) {
+          .plan-content .buttons .button-block-left .button {
+            width: 220px;
+            height: 60px; } }
+    .plan-content .buttons .button-block-right {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      @media (max-width: 750px) {
+        .plan-content .buttons .button-block-right {
+          padding-bottom: 20px; } }
+      .plan-content .buttons .button-block-right .button {
+        background-color: #1db7c8;
+        border-radius: 15px;
+        height: 110px;
+        width: 350px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none; }
+        @media (max-width: 1400px) {
+          .plan-content .buttons .button-block-right .button {
+            width: 240px;
+            height: 60px; } }
+        @media (max-width: 850px) {
+          .plan-content .buttons .button-block-right .button {
+            width: 220px;
+            height: 60px; } }
+    .plan-content .buttons p {
+      margin-bottom: 30px;
+      font-size: 30px;
+      font-family: "Maven Pro";
+      color: black;
+      font-weight: bold;
+      line-height: 1.167; }
+      @media (max-width: 1400px) {
+        .plan-content .buttons p {
+          font-size: 22px; } }
+      @media (max-width: 850px) {
+        .plan-content .buttons p {
+          font-size: 20px; } }
+      @media (max-width: 850px) {
+        .plan-content .buttons p {
+          font-size: 18px;
+          margin-bottom: 15px; } }
+    .plan-content .buttons a {
+      margin-bottom: 65px;
+      font-size: 30px;
+      font-family: "Maven Pro";
+      color: white;
+      font-weight: bold;
+      line-height: 1.167; }
+      @media (max-width: 1400px) {
+        .plan-content .buttons a {
+          font-size: 20px;
+          margin-bottom: 25px; } }
+
+/*---FOOTER---*/
+.footer {
+  background: #2d2d2d; }
+  .footer .footer-content {
+    display: flex;
+    padding: 75px 0 70px 0; }
+    @media (max-width: 1400px) {
+      .footer .footer-content {
+        padding: 45px 0 30px 0; } }
+    @media (max-width: 750px) {
+      .footer .footer-content {
+        flex-wrap: wrap; } }
+    .footer .footer-content .links {
+      display: flex;
+      flex-direction: column; }
+      @media (max-width: 750px) {
+        .footer .footer-content .links {
+          width: 50%; } }
+      .footer .footer-content .links a {
+        margin-bottom: 30px;
+        text-decoration: none;
+        font-size: 14px;
+        font-family: "Roboto";
+        color: #d1dfeb;
+        line-height: 0.786; }
+        @media (max-width: 600px) {
+          .footer .footer-content .links a {
+            font-size: 12px; } }
+        @media (max-width: 500px) {
+          .footer .footer-content .links a {
+            font-size: 10px; } }
+    .footer .footer-content .links-1 {
+      padding-right: 90px; }
+      @media (max-width: 750px) {
+        .footer .footer-content .links-1 {
+          padding-right: 0; } }
+    .footer .footer-content img {
+      margin-left: auto; }
+      @media (max-width: 750px) {
+        .footer .footer-content img {
+          margin-left: 0; } }
+
+.sub-footer {
+  background-color: #1db7c8; }
+  .sub-footer .logo-subfooter {
+    padding: 40px 0 50px 0;
+    font-size: 14px;
+    font-family: "Roboto";
+    color: white;
+    line-height: 0.857; }
+    @media (max-width: 1400px) {
+      .sub-footer .logo-subfooter {
+        padding: 30px 0 30px 0; } }
+
+/*---OTHER_PAGES---*/
+.tell {
+  background-color: #f4f4f4; }
+
+.tell-content {
+  padding: 60px 13px 40px 0px;
+  display: flex;
+  flex-direction: column; }
+  @media (max-width: 1400px) {
+    .tell-content {
+      padding: 30px 13 50px 0; } }
+  .tell-content .text {
+    padding-bottom: 60px; }
+    @media (max-width: 1400px) {
+      .tell-content .text {
+        padding-bottom: 20px; } }
+    .tell-content .text .text-title {
+      font-size: 52px;
+      font-family: "Maven Pro";
+      color: black;
+      font-weight: bold;
+      line-height: 1.167; }
+      @media (max-width: 1400px) {
+        .tell-content .text .text-title {
+          font-size: 28px;
+          margin-bottom: 15px; } }
+      @media (max-width: 400px) {
+        .tell-content .text .text-title {
+          font-size: 24px; } }
+    .tell-content .text .text-main {
+      font-size: 28px;
+      font-family: "Roboto";
+      color: black;
+      line-height: 2.045; }
+      @media (max-width: 1400px) {
+        .tell-content .text .text-main {
+          font-size: 16px; } }
+  .tell-content .content {
+    display: flex; }
+    @media (max-width: 770px) {
+      .tell-content .content {
+        flex-direction: column; } }
+    .tell-content .content .left-part {
+      display: flex;
+      flex-direction: column;
+      margin-right: 80px; }
+      .tell-content .content .left-part a {
+        decoration: none; }
+      @media (max-width: 1065px) {
+        .tell-content .content .left-part {
+          margin-right: 40px; } }
+      .tell-content .content .left-part p {
+        font-size: 30px;
+        font-family: "Roboto";
+        color: black;
+        line-height: 2.045;
+        padding-bottom: 30px; }
+        @media (max-width: 1400px) {
+          .tell-content .content .left-part p {
+            padding-bottom: 10px;
+            font-size: 20px; } }
+        @media (max-width: 1150px) {
+          .tell-content .content .left-part p {
+            padding-bottom: 10px; } }
+        @media (max-width: 1330px) {
+          .tell-content .content .left-part p {
+            font-size: 18px; } }
+      .tell-content .content .left-part .input-name {
+        width: 506px;
+        height: 36px;
+        border: 2px solid #959595;
+        background: #f4f4f4 !important;
+        outline: none;
+        font-size: 34px;
+        font-family: "Roboto";
+        padding: 10px;
+        margin-bottom: 35px; }
+        @media (max-width: 1400px) {
+          .tell-content .content .left-part .input-name {
+            margin-bottom: 15px;
+            width: 316px;
+            height: 20px;
+            font-size: 24px; } }
+        @media (max-width: 770px) {
+          .tell-content .content .left-part .input-name {
+            width: 506px; } }
+        @media (max-width: 640px) {
+          .tell-content .content .left-part .input-name {
+            width: 450px; } }
+        @media (max-width: 580px) {
+          .tell-content .content .left-part .input-name {
+            width: 360px; } }
+        @media (max-width: 440px) {
+          .tell-content .content .left-part .input-name {
+            width: 270px; } }
+        @media (max-width: 400px) {
+          .tell-content .content .left-part .input-name {
+            width: 236px; } }
+      .tell-content .content .left-part .input-comment {
+        width: 506px;
+        height: 176px;
+        border: 2px solid #959595;
+        background: #f4f4f4 !important;
+        outline: none;
+        font-size: 34px;
+        font-family: "Roboto";
+        padding: 10px;
+        margin-bottom: 45px; }
+        @media (max-width: 1400px) {
+          .tell-content .content .left-part .input-comment {
+            width: 316px;
+            font-size: 24px; } }
+        @media (max-width: 770px) {
+          .tell-content .content .left-part .input-comment {
+            width: 506px; } }
+        @media (max-width: 640px) {
+          .tell-content .content .left-part .input-comment {
+            width: 450px;
+            height: 40px; } }
+        @media (max-width: 580px) {
+          .tell-content .content .left-part .input-comment {
+            width: 360px; } }
+        @media (max-width: 440px) {
+          .tell-content .content .left-part .input-comment {
+            width: 270px; } }
+        @media (max-width: 400px) {
+          .tell-content .content .left-part .input-comment {
+            width: 236px; } }
+      .tell-content .content .left-part .submit {
+        width: 270px;
+        height: 80px;
+        background-color: #682792;
+        border-radius: 10px;
+        font-size: 30px;
+        font-family: "Maven Pro";
+        color: white;
+        font-weight: bold;
+        line-height: 1.167;
+        text-align: center;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        @media (max-width: 1400px) {
+          .tell-content .content .left-part .submit {
+            width: 260px;
+            height: 60px;
+            font-size: 20px; } }
+    .tell-content .content .right-part {
+      display: flex;
+      flex-direction: column; }
+      .tell-content .content .right-part a {
+        text-decoration: none; }
+      .tell-content .content .right-part .right-title {
+        font-size: 30px;
+        font-family: "Roboto";
+        color: black;
+        line-height: 2.045;
+        padding-bottom: 30px; }
+        @media (max-width: 1400px) {
+          .tell-content .content .right-part .right-title {
+            font-size: 20px;
+            padding-bottom: 10px; } }
+        @media (max-width: 510px) {
+          .tell-content .content .right-part .right-title {
+            font-size: 18px; } }
+      .tell-content .content .right-part .right-main {
+        border: 2px solid #959595;
+        padding: 35px 36px 35px 35px; }
+        @media (max-width: 1400px) {
+          .tell-content .content .right-part .right-main {
+            padding: 25px; } }
+        .tell-content .content .right-part .right-main p {
+          font-size: 24px;
+          font-family: "Roboto";
+          color: black;
+          line-height: 1.583; }
+          @media (max-width: 1400px) {
+            .tell-content .content .right-part .right-main p {
+              font-size: 18px; } }
+        .tell-content .content .right-part .right-main .call {
+          font-size: 22px;
+          font-family: "Maven Pro";
+          color: white;
+          font-weight: bold;
+          line-height: 1.167;
+          text-align: center;
+          margin: 25px 0 45px 0;
+          height: 55px;
+          width: 220px;
+          background-color: #1db7c8;
+          border-radius: 10px;
+          border: none;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          @media (max-width: 1400px) {
+            .tell-content .content .right-part .right-main .call {
+              margin: 15px 0 25px 0;
+              font-size: 18px; } }
+          @media (max-width: 350px) {
+            .tell-content .content .right-part .right-main .call {
+              width: 180px; } }
+
+.access {
+  background: #ffffff;
+  border-top: 3px solid #e1e1e1; }
+
+.access-content {
+  padding: 60px 0 160px 0;
+  display: flex;
+  flex-direction: column; }
+  @media (max-width: 1400px) {
+    .access-content {
+      padding: 30px 0 50px 0; } }
+  .access-content .access-title {
+    font-size: 52px;
+    font-family: "Maven Pro";
+    color: black;
+    font-weight: bold;
+    line-height: 1.167;
+    margin-bottom: 80px; }
+    @media (max-width: 1400px) {
+      .access-content .access-title {
+        font-size: 28px;
+        margin-bottom: 15px; } }
+    @media (max-width: 450px) {
+      .access-content .access-title {
+        font-size: 24px; } }
+  .access-content .access-subtitle {
+    font-size: 38px;
+    font-family: "Roboto";
+    color: black;
+    font-weight: bold;
+    line-height: 2.458; }
+    @media (max-width: 1400px) {
+      .access-content .access-subtitle {
+        font-size: 26px; } }
+  .access-content .forms {
+    display: flex;
+    padding-bottom: 50px; }
+    @media (max-width: 1200px) {
+      .access-content .forms {
+        flex-direction: column; } }
+    @media (max-width: 1400px) {
+      .access-content .forms {
+        padding-bottom: 20px; } }
+    .access-content .forms .name {
+      margin-right: 45px; }
+      .access-content .forms .name p {
+        font-size: 30px;
+        font-family: "Roboto";
+        color: black;
+        font-weight: bold;
+        line-height: 2.045; }
+        @media (max-width: 1400px) {
+          .access-content .forms .name p {
+            font-size: 20px; } }
+        @media (max-width: 510px) {
+          .access-content .forms .name p {
+            font-size: 18px; } }
+      .access-content .forms .name .name-input {
+        height: 60px;
+        width: 506px;
+        border: 2px solid #959595;
+        background: #ffffff !important;
+        outline: none;
+        font-size: 34px;
+        font-family: "Roboto";
+        padding: 10px; }
+        @media (max-width: 1400px) {
+          .access-content .forms .name .name-input {
+            width: 366px;
+            height: 20px;
+            font-size: 24px; } }
+        @media (max-width: 450px) {
+          .access-content .forms .name .name-input {
+            width: 236px; } }
+    .access-content .forms .email p {
+      font-size: 30px;
+      font-family: "Roboto";
+      color: black;
+      font-weight: bold;
+      line-height: 2.045; }
+      @media (max-width: 1400px) {
+        .access-content .forms .email p {
+          font-size: 20px; } }
+      @media (max-width: 510px) {
+        .access-content .forms .email p {
+          font-size: 18px; } }
+      .access-content .forms .email p span {
+        font-weight: lighter; }
+    .access-content .forms .email .email-input {
+      height: 60px;
+      width: 506px;
+      border: 2px solid #959595;
+      background: #ffffff !important;
+      outline: none;
+      font-size: 34px;
+      font-family: "Roboto";
+      padding: 10px; }
+      @media (max-width: 1400px) {
+        .access-content .forms .email .email-input {
+          width: 366px;
+          height: 20px;
+          font-size: 24px; } }
+      @media (max-width: 450px) {
+        .access-content .forms .email .email-input {
+          width: 236px; } }
+  .access-content .request {
+    margin-bottom: 50px; }
+    @media (max-width: 1400px) {
+      .access-content .request {
+        margin-bottom: 25px; } }
+    .access-content .request p {
+      font-size: 30px;
+      font-family: "Roboto";
+      color: black;
+      font-weight: bold;
+      line-height: 2.045; }
+      @media (max-width: 1400px) {
+        .access-content .request p {
+          font-size: 20px; } }
+      @media (max-width: 510px) {
+        .access-content .request p {
+          font-size: 18px; } }
+    .access-content .request textarea {
+      width: 466px;
+      height: 280px;
+      border: 2px solid #959595;
+      background: #ffffff !important;
+      outline: none;
+      font-size: 20px;
+      font-family: "Roboto";
+      line-height: 1.36;
+      padding: 30px; }
+      @media (max-width: 1400px) {
+        .access-content .request textarea {
+          width: 326px;
+          height: 200px; } }
+      @media (max-width: 450px) {
+        .access-content .request textarea {
+          width: 196px; } }
+      .access-content .request textarea::placeholder {
+        color: black; }
+  .access-content a {
+    text-decoration: none; }
+  .access-content .submit {
+    width: 270px;
+    height: 80px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background-color: #682792;
+    font-size: 30px;
+    font-family: "Maven Pro";
+    color: white;
+    font-weight: bold;
+    line-height: 1.167;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    @media (max-width: 1400px) {
+      .access-content .submit {
+        width: 260px;
+        height: 60px;
+        font-size: 20px; } }
+
+.pop-up {
+  width: 230px;
+  height: 130px;
+  padding: 10px 35px 10px 35px;
+  font-size: 25px;
+  font-family: "Roboto";
+  color: black;
+  line-height: 1.333;
+  text-align: left; }
+
+.tippy-popper {
+  left: 20px !important; }
+
+.tippy-tooltip.light-border-theme {
+  border: 2px solid #e1e1e1 !important;
+  box-shadow: none !important;
+  border-radius: 15px !important; }
+
+.register-section {
+  background: #ffffff;
+  border-top: 3px solid #e1e1e1; }
+
+.register-content {
+  padding: 60px 0 110px 0;
+  display: flex;
+  flex-direction: column; }
+  @media (max-width: 1400px) {
+    .register-content {
+      padding: 30px 0 50px 0; } }
+  .register-content a {
+    text-decoration: none; }
+  .register-content .title {
+    font-size: 52px;
+    font-family: "Maven Pro";
+    color: black;
+    font-weight: bold;
+    line-height: 1.167;
+    margin-bottom: 30px; }
+    @media (max-width: 1400px) {
+      .register-content .title {
+        font-size: 28px;
+        margin-bottom: 15px; } }
+    @media (max-width: 400px) {
+      .register-content .title {
+        font-size: 24px; } }
+  .register-content .desc {
+    font-size: 28px;
+    font-family: "Roboto";
+    color: black;
+    line-height: 2.191;
+    margin-bottom: 60px;
+    font-weight: 500; }
+    @media (max-width: 1400px) {
+      .register-content .desc {
+        font-size: 16px;
+        margin-bottom: 10px; } }
+  .register-content div {
+    display: flex;
+    flex-direction: column; }
+    .register-content div p {
+      font-size: 30px;
+      font-family: "Roboto";
+      color: black;
+      line-height: 2.045;
+      font-weight: 500; }
+      @media (max-width: 1400px) {
+        .register-content div p {
+          font-size: 20px; } }
+      @media (max-width: 510px) {
+        .register-content div p {
+          font-size: 18px; } }
+      .register-content div p span {
+        font-weight: lighter; }
+    .register-content div input {
+      height: 60px;
+      width: 506px;
+      border: 2px solid #959595;
+      background: #ffffff !important;
+      outline: none;
+      font-size: 34px;
+      font-family: "Roboto";
+      padding: 10px; }
+      @media (max-width: 1400px) {
+        .register-content div input {
+          width: 316px;
+          height: 20px;
+          font-size: 24px; } }
+      @media (max-width: 400px) {
+        .register-content div input {
+          width: 236px; } }
+  .register-content .pass_repeat {
+    margin-bottom: 50px; }
+    @media (max-width: 1400px) {
+      .register-content .pass_repeat {
+        margin-bottom: 25px; } }
+  .register-content .register-button {
+    width: 270px;
+    height: 80px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background-color: #682792;
+    font-size: 30px;
+    font-family: "Maven Pro";
+    color: white;
+    font-weight: bold;
+    line-height: 1.167;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px; }
+    @media (max-width: 1400px) {
+      .register-content .register-button {
+        width: 260px;
+        height: 60px;
+        font-size: 20px; } }
+  .register-content .signIn {
+    margin-top: 35px;
+    font-size: 27px;
+    font-family: "Maven Pro";
+    color: black;
+    line-height: 1.167; }
+    @media (max-width: 1400px) {
+      .register-content .signIn {
+        font-size: 17px; } }
+    .register-content .signIn a {
+      color: #00afe8;
+      text-decoration: none; }
+
+.login {
+  background: #ffffff;
+  border-top: 3px solid #e1e1e1; }
+
+.login-section {
+  padding: 60px 0 110px 0;
+  display: flex;
+  flex-direction: column; }
+  @media (max-width: 1400px) {
+    .login-section {
+      padding: 30px 0 50px 0; } }
+  .login-section .title {
+    font-size: 52px;
+    font-family: "Maven Pro";
+    color: black;
+    font-weight: bold;
+    line-height: 1.167;
+    margin-bottom: 30px; }
+    @media (max-width: 1400px) {
+      .login-section .title {
+        font-size: 28px;
+        margin-bottom: 15px; } }
+    @media (max-width: 400px) {
+      .login-section .title {
+        font-size: 24px; } }
+  .login-section .desc {
+    font-size: 28px;
+    font-family: "Roboto";
+    color: black;
+    line-height: 2.191;
+    margin-bottom: 60px;
+    font-weight: 500; }
+    @media (max-width: 1400px) {
+      .login-section .desc {
+        font-size: 16px;
+        margin-bottom: 10px; } }
+  .login-section .login-content {
+    display: flex; }
+    @media (max-width: 1000px) {
+      .login-section .login-content {
+        flex-direction: column; } }
+    .login-section .login-content .login-left {
+      margin-right: 140px; }
+      .login-section .login-content .login-left a {
+        text-decoration: none; }
+      @media (max-width: 1092px) {
+        .login-section .login-content .login-left {
+          margin-right: 80px; } }
+      @media (max-width: 1000px) {
+        .login-section .login-content .login-left {
+          margin-right: 0px;
+          margin-bottom: 20px; } }
+      .login-section .login-content .login-left p {
+        font-size: 30px;
+        font-family: "Roboto";
+        color: black;
+        line-height: 2.045;
+        font-weight: 500; }
+        @media (max-width: 1400px) {
+          .login-section .login-content .login-left p {
+            font-size: 20px; } }
+        @media (max-width: 510px) {
+          .login-section .login-content .login-left p {
+            font-size: 18px; } }
+        .login-section .login-content .login-left p span {
+          font-weight: lighter; }
+      .login-section .login-content .login-left input {
+        height: 60px;
+        width: 506px;
+        border: 2px solid #959595;
+        background: #ffffff !important;
+        outline: none;
+        font-size: 34px;
+        font-family: "Roboto";
+        padding: 10px; }
+        @media (max-width: 1400px) {
+          .login-section .login-content .login-left input {
+            width: 316px;
+            height: 20px;
+            font-size: 24px; } }
+        @media (max-width: 400px) {
+          .login-section .login-content .login-left input {
+            width: 236px; } }
+      .login-section .login-content .login-left .pass {
+        margin-bottom: 25px; }
+      .login-section .login-content .login-left .login {
+        width: 270px;
+        height: 80px;
+        border-radius: 10px;
+        outline: none;
+        border: none;
+        background-color: #682792;
+        font-size: 27px;
+        font-family: "Maven Pro";
+        color: white;
+        font-weight: bold;
+        line-height: 1.167;
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        @media (max-width: 1400px) {
+          .login-section .login-content .login-left .login {
+            width: 260px;
+            height: 60px;
+            font-size: 20px; } }
+      .login-section .login-content .login-left .forgot {
+        font-size: 27px;
+        font-family: "Maven Pro";
+        color: #000000;
+        font-weight: 500;
+        line-height: 1.167;
+        margin-right: 20px; }
+        @media (max-width: 1400px) {
+          .login-section .login-content .login-left .forgot {
+            font-size: 17px; } }
+        .login-section .login-content .login-left .forgot .a-reg {
+          text-decoration: none;
+          color: #00afe8; }
+      .login-section .login-content .login-left .a-forgot {
+        font-size: 27px;
+        font-family: "Maven Pro";
+        color: #000000;
+        font-weight: 500;
+        line-height: 1.167;
+        text-decoration: none;
+        color: #000000; }
+        @media (max-width: 1400px) {
+          .login-section .login-content .login-left .a-forgot {
+            font-size: 17px; } }
+      .login-section .login-content .login-left .inline {
+        display: flex; }
+        @media (max-width: 1380px) {
+          .login-section .login-content .login-left .inline {
+            flex-direction: column; } }
+    .login-section .login-content .login-right a {
+      text-decoration: none; }
+    .login-section .login-content .login-right p {
+      font-size: 30px;
+      font-family: "Roboto";
+      color: black;
+      line-height: 2.045;
+      margin-bottom: 10px; }
+      @media (max-width: 1400px) {
+        .login-section .login-content .login-right p {
+          font-size: 20px; } }
+    .login-section .login-content .login-right .demo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 110px;
+      width: 310px;
+      border-radius: 10px;
+      outline: none;
+      border: none;
+      background-color: #682792;
+      font-size: 27px;
+      font-family: "Maven Pro";
+      color: white;
+      font-weight: bold;
+      line-height: 1.167; }
+      @media (max-width: 1400px) {
+        .login-section .login-content .login-right .demo {
+          width: 260px;
+          height: 60px;
+          font-size: 20px; } }
+
+.forgot-pass {
+  background: #ffffff;
+  border-top: 3px solid #e1e1e1; }
+
+.forgot-pass-content {
+  padding: 60px 0 110px 0;
+  display: flex;
+  flex-direction: column; }
+  @media (max-width: 1400px) {
+    .forgot-pass-content {
+      padding: 30px 0 50px 0; } }
+  .forgot-pass-content .title {
+    font-size: 52px;
+    font-family: "Maven Pro";
+    color: black;
+    font-weight: bold;
+    line-height: 1.167;
+    margin-bottom: 30px; }
+    @media (max-width: 1400px) {
+      .forgot-pass-content .title {
+        font-size: 28px;
+        margin-bottom: 15px; } }
+    @media (max-width: 400px) {
+      .forgot-pass-content .title {
+        font-size: 24px; } }
+    @media (max-width: 360px) {
+      .forgot-pass-content .title {
+        text-align: center; } }
+  .forgot-pass-content .desc {
+    font-size: 28px;
+    font-family: "Roboto";
+    color: black;
+    line-height: 2.191;
+    margin-bottom: 60px;
+    font-weight: 500; }
+    @media (max-width: 1400px) {
+      .forgot-pass-content .desc {
+        font-size: 16px;
+        margin-bottom: 10px; } }
+    @media (max-width: 360px) {
+      .forgot-pass-content .desc {
+        text-align: center; } }
+  .forgot-pass-content .name {
+    margin-bottom: 70px; }
+    @media (max-width: 1400px) {
+      .forgot-pass-content .name {
+        margin-bottom: 30px; } }
+    .forgot-pass-content .name p {
+      font-size: 30px;
+      font-family: "Roboto";
+      color: black;
+      line-height: 2.045;
+      font-weight: 500; }
+      @media (max-width: 1400px) {
+        .forgot-pass-content .name p {
+          font-size: 20px; } }
+      @media (max-width: 510px) {
+        .forgot-pass-content .name p {
+          font-size: 18px; } }
+      .forgot-pass-content .name p span {
+        font-weight: lighter; }
+    .forgot-pass-content .name input {
+      height: 60px;
+      width: 506px;
+      border: 2px solid #959595;
+      background: #ffffff !important;
+      outline: none;
+      font-size: 34px;
+      font-family: "Roboto";
+      padding: 10px; }
+      @media (max-width: 1400px) {
+        .forgot-pass-content .name input {
+          width: 316px;
+          height: 20px;
+          font-size: 24px; } }
+      @media (max-width: 400px) {
+        .forgot-pass-content .name input {
+          width: 236px; } }
+  .forgot-pass-content a {
+    text-decoration: none; }
+  .forgot-pass-content .button {
+    height: 80px;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background-color: #682792;
+    font-size: 27px;
+    font-family: "Maven Pro";
+    color: white;
+    font-weight: bold;
+    line-height: 1.167; }
+    @media (max-width: 1400px) {
+      .forgot-pass-content .button {
+        width: 260px;
+        height: 60px;
+        font-size: 20px; } }
+  .forgot-pass-content .sub {
+    font-size: 27px;
+    font-family: "Maven Pro";
+    color: black;
+    line-height: 1.167;
+    font-weight: 500;
+    margin-top: 40px; }
+    @media (max-width: 1400px) {
+      .forgot-pass-content .sub {
+        margin-top: 20px;
+        font-size: 18px; } }
+    @media (max-width: 330px) {
+      .forgot-pass-content .sub {
+        text-align: center; } }

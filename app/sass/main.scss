@@ -1,0 +1,25 @@
+/*---BASE---*/
+@import './base/_base.scss';
+
+/*---LAYOUTS---*/
+@import './layout/_style.scss';
+
+/*---HEADER---*/
+@import './layout/_header.scss';
+
+/*---MODULES---*/
+@import './modules/_banner.scss';
+@import './modules/_how.scss';
+@import './modules/_price.scss';
+@import './modules/_faq.scss';
+@import './modules/_plan.scss';
+
+/*---FOOTER---*/
+@import './layout/_footer.scss';
+
+/*---OTHER_PAGES---*/
+@import './modules/_tellmore.scss';
+@import './modules/_request-access.scss';
+@import './modules/_register.scss';
+@import './modules/_login.scss';
+@import './modules/_forgot-pass.scss';

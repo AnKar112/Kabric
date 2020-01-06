@@ -1,0 +1,189 @@
+.login {
+    background: #ffffff;
+    border-top: 3px solid #e1e1e1;
+}
+
+.login-section {
+    padding: 60px 0 110px 0;
+    display: flex;
+    flex-direction: column;
+    @media(max-width: 1400px) {
+        padding: 30px 0 50px 0;
+    }
+    .title {
+        font-size: 52px;
+        font-family: "Maven Pro";
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        line-height: 1.167;
+        margin-bottom: 30px;
+        @media(max-width: 1400px) {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+        @media(max-width: 400px) {
+            font-size: 24px;
+        }
+    }
+    .desc {
+        font-size: 28px;
+        font-family: "Roboto";
+        color: rgb(0, 0, 0);
+        line-height: 2.191;
+        margin-bottom: 60px;
+        font-weight: 500;
+        @media(max-width: 1400px) {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+    }
+    .login-content {
+        display: flex;
+        @media(max-width: 1000px) {
+            flex-direction: column;
+        }
+        .login-left {
+            a {
+                text-decoration: none; 
+            }
+            margin-right: 140px;
+            @media(max-width: 1092px) {
+                margin-right: 80px;
+            }
+            @media(max-width: 1000px) {
+                margin-right: 0px;
+                margin-bottom: 20px;
+            }
+            p {
+                font-size: 30px;
+                font-family: "Roboto";
+                color: rgb(0, 0, 0);
+                line-height: 2.045;
+                font-weight: 500;
+                @media(max-width: 1400px) {
+                    font-size: 20px;
+                }
+                @media(max-width: 510px) {
+                    font-size: 18px;
+                }
+                span {
+                    font-weight: lighter;
+                }
+            }
+            input {
+                height: 60px;
+                width: 506px;
+                border: 2px solid #959595;
+                background: #ffffff !important;
+                outline: none;
+                font-size: 34px;
+                font-family: "Roboto";
+                padding: 10px;
+                @media(max-width: 1400px) {
+                    width: 316px;
+                    height: 20px;
+                    font-size: 24px;
+                }
+                @media(max-width: 400px) {
+                    width: 236px;
+                }
+            }
+            .pass {
+                margin-bottom: 25px;
+            }
+            .login {
+                width: 270px;
+                height: 80px;
+                border-radius: 10px;
+                outline: none;
+                border:none;
+                background-color: #682792;
+                font-size: 27px;
+                font-family: "Maven Pro";
+                color: rgb(255, 255, 255);
+                font-weight: bold;
+                line-height: 1.167;
+                margin-bottom: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                @media(max-width: 1400px) {
+                    width: 260px;
+                    height: 60px;
+                    font-size: 20px;
+                }
+            }
+            .forgot {
+                font-size: 27px;
+                font-family: "Maven Pro";
+                color: #000000;
+                font-weight: 500;
+                line-height: 1.167;
+                margin-right: 20px;
+                @media(max-width: 1400px) {
+                    font-size: 17px;
+                }
+                .a-reg {
+                    text-decoration: none;
+                    color: #00afe8;
+                }
+            }
+            .a-forgot {
+                font-size: 27px;
+                font-family: "Maven Pro";
+                color: #000000;
+                font-weight: 500;
+                line-height: 1.167;
+                text-decoration: none;
+                color: #000000;
+                @media(max-width: 1400px) {
+                    font-size: 17px;
+                }
+            }
+            .inline {
+                display: flex;
+                @media(max-width: 1380px) {
+                    flex-direction: column;
+                }
+            }
+        }
+        .login-right {
+            a {
+                text-decoration: none;
+            }
+            p {
+                font-size: 30px;
+                font-family: "Roboto";
+                color: rgb(0, 0, 0);
+                line-height: 2.045; 
+                margin-bottom: 10px;
+                @media(max-width: 1400px) {
+                    font-size: 20px;
+                }
+            }
+            .demo {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 110px;
+                width: 310px; 
+                border-radius: 10px;
+                outline: none;
+                border:none;
+                background-color: #682792;
+                font-size: 27px;
+                font-family: "Maven Pro";
+                color: rgb(255, 255, 255);
+                font-weight: bold;
+                line-height: 1.167;
+                @media(max-width: 1400px) {
+                    width: 260px;
+                    height: 60px;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+  

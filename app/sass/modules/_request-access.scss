@@ -1,0 +1,182 @@
+.access {
+    background: #ffffff;
+    border-top: 3px solid #e1e1e1;
+}
+
+.access-content {
+    padding: 60px 0 160px 0;
+    display: flex;
+    flex-direction: column;
+    @media(max-width: 1400px) {
+        padding: 30px 0 50px 0;
+    }
+    .access-title {
+        font-size: 52px;
+        font-family: "Maven Pro";
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        line-height: 1.167;
+        margin-bottom: 80px;
+        @media(max-width: 1400px) {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+        @media(max-width: 450px) {
+            font-size: 24px;
+        }
+    }
+    .access-subtitle {
+        font-size: 38px;
+        font-family: "Roboto";
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        line-height: 2.458; 
+        @media(max-width: 1400px) {
+            font-size: 26px;
+        }
+    }
+    .forms {
+        display: flex;
+        padding-bottom: 50px;
+        @media(max-width: 1200px) {
+            flex-direction: column;
+        }
+        @media(max-width: 1400px) {
+            padding-bottom: 20px;
+        }
+        .name {
+            margin-right: 45px;
+            p {
+                font-size: 30px;
+                font-family: "Roboto";
+                color: rgb(0, 0, 0);
+                font-weight: bold;
+                line-height: 2.045;
+                @media(max-width: 1400px) {
+                    font-size: 20px;
+                }
+                @media(max-width: 510px) {
+                    font-size: 18px;
+                }
+            }
+            .name-input {
+                height: 60px;
+                width: 506px;
+                border: 2px solid #959595;
+                background: #ffffff !important;
+                outline: none;
+                font-size: 34px;
+                font-family: "Roboto";
+                padding: 10px;
+                @media(max-width: 1400px) {
+                    width: 366px;
+                    height: 20px;
+                    font-size: 24px;
+                }
+                @media(max-width: 450px) {
+                    width: 236px;
+                }
+            }
+        }
+        .email {
+            p {
+                font-size: 30px;
+                font-family: "Roboto";
+                color: rgb(0, 0, 0);
+                font-weight: bold;
+                line-height: 2.045;
+                @media(max-width: 1400px) {
+                    font-size: 20px;
+                }
+                @media(max-width: 510px) {
+                    font-size: 18px;
+                }
+                span {
+                    font-weight: lighter;
+                }
+            }
+            .email-input {
+                height: 60px;
+                width: 506px;
+                border: 2px solid #959595;
+                background: #ffffff !important;
+                outline: none;
+                font-size: 34px;
+                font-family: "Roboto";
+                padding: 10px; 
+                @media(max-width: 1400px) {
+                    width: 366px;
+                    height: 20px;
+                    font-size: 24px;
+                }
+                @media(max-width: 450px) {
+                    width: 236px;
+                }
+            }
+        }
+    }
+    .request {
+        margin-bottom: 50px;
+        @media(max-width: 1400px) {
+            margin-bottom: 25px;
+        }
+        p {
+            font-size: 30px;
+            font-family: "Roboto";
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            line-height: 2.045; 
+            @media(max-width: 1400px) {
+                font-size: 20px;
+            }
+            @media(max-width: 510px) {
+                font-size: 18px;
+            }
+        }
+        textarea {
+            width: 466px;
+            height: 280px;
+            border: 2px solid #959595;
+            background: #ffffff !important;
+            outline: none;
+            font-size: 20px;
+            font-family: "Roboto";
+            line-height: 1.36; 
+            padding: 30px;
+            @media(max-width: 1400px) {
+                width: 326px;
+                height: 200px;
+            }
+            @media(max-width: 450px) {
+                width: 196px;
+            }
+            &::placeholder {
+                color: rgb(0, 0, 0);
+              }
+        }
+    }
+    a {
+        text-decoration: none;
+    }
+    .submit {
+        width: 270px;
+        height: 80px;
+        border-radius: 10px;
+        outline: none;
+        border:none;
+        background-color: #682792;
+        font-size: 30px;
+        font-family: "Maven Pro";
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        line-height: 1.167;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media(max-width: 1400px) {
+            width: 260px;
+            height: 60px;
+            font-size: 20px;
+        }
+    }
+}

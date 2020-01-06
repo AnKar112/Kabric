@@ -1,0 +1,148 @@
+.plan {
+    background: url(../img/plan-background.png) no-repeat left center;
+    background-color: #f4f4f4;
+    margin-bottom: 68px;
+    background-size: cover;
+    @media(max-width: 1350px) {
+        background-size: cover;
+        background: url(../img/plan-background.png) no-repeat 60% center;
+    }
+    @media(max-width: 1200px) {
+        margin-bottom: 25px;
+        background: url(../img/plan-background.png) no-repeat 80% center;
+    }
+    @media(max-width: 900px) {
+        background: url(../img/plan-background.png) no-repeat 100% center;
+    }
+}
+
+.plan-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    margin-left: auto;
+    @media(max-width: 1350px) {
+        width: 70%;
+    }
+    @media(max-width: 1100px) {
+        width: 80%;
+    }
+    @media(max-width: 900px) {
+        width: 100%;
+    }
+    .title {
+        padding: 50px 0 90px 0;
+        font-size: 42px;
+        font-family: "Maven Pro";
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        line-height: 1.167;
+        @media(max-width: 1400px) {
+            font-size: 32px;
+            padding: 30px 0 60px 0;
+        }
+        @media(max-width: 1000px) {
+            padding: 30px 0 40px 0;
+        }
+        @media(max-width: 850px) {
+            font-size: 36px;
+        }
+        @media(max-width: 900px) {
+            width: 100%;
+            text-align: center;
+        }
+        @media(max-width: 500px) {
+            font-size: 30px;
+        }
+    }
+    .buttons {
+        display:flex;
+        @media(max-width: 750px) {
+            flex-direction: column;
+        }
+        .button-block-left {
+            margin-right: 70px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            @media(max-width: 750px) {
+                margin-right: 0;
+            }
+            .button {
+                background-color: #682792;
+                border-radius: 15px;
+                height: 110px;
+                width: 350px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+                @media(max-width: 1400px) {
+                    width: 240px;
+                    height: 60px;
+                }
+                @media(max-width: 850px) {
+                    width: 220px;
+                    height: 60px;
+                }
+            }
+        }
+        .button-block-right {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            @media(max-width: 750px) {
+                padding-bottom: 20px;
+            }
+            .button {
+                background-color: #1db7c8;
+                border-radius: 15px;
+                height: 110px;
+                width: 350px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+                @media(max-width: 1400px) {
+                    width: 240px;
+                    height: 60px;
+                }
+                @media(max-width: 850px) {
+                    width: 220px;
+                    height: 60px;
+                }
+            }
+        }
+        p {
+            margin-bottom: 30px;
+            font-size: 30px;
+            font-family: "Maven Pro";
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            line-height: 1.167;
+            @media(max-width: 1400px) {
+                font-size: 22px;
+            }
+            @media(max-width: 850px) {
+                font-size: 20px;
+            }
+            @media(max-width: 850px) {
+                font-size: 18px;
+                margin-bottom: 15px;
+            }
+        }
+        a {
+            margin-bottom: 65px;
+            font-size: 30px;
+            font-family: "Maven Pro";
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            line-height: 1.167;
+            @media(max-width: 1400px) {
+                font-size: 20px;
+                margin-bottom: 25px;
+            }
+        }
+    }
+}
